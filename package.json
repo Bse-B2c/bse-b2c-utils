@@ -1,0 +1,22 @@
+{
+  "name": "@bse-b2c/bse-b2c-utils",
+  "version": "1.0.0",
+  "description": "Bse-B2c utility functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bse-B2c/bse-b2c-utils.git"
+  },
+  "author": "rodrigo.limoes",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/Bse-B2c/bse-b2c-utils/issues"
+  },
+  "homepage": "https://github.com/Bse-B2c/bse-b2c-utils#readme",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
