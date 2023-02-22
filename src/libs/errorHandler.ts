@@ -13,7 +13,7 @@ export const errorHandler = (
   res: Response,
   next: (err?: any) => void
 ) => {
-  const errorName = err.name ?? "HttpExecption";
+  const errorName = err.name ?? "HttpException";
   const statusCode = err.statusCode ?? HttpStatusCode.INTERNAL_SERVER;
   const message = err.message ?? "Something went wrong";
 
