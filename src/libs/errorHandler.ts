@@ -1,17 +1,12 @@
 import { HttpError } from "./httpException";
 import { HttpStatusCode } from "./enums/httpStatus";
-
-export interface Response {
-  status(statusCode: number): this;
-
-  send(body: any): any;
-}
+import { Request, Response, NextFunction } from "express";
 
 export const errorHandler = (
   err: HttpError,
   req: Request,
   res: Response,
-  next: (err?: any) => void
+  next: NextFunction
 ) => {
   const errorName = err.name ?? "HttpException";
   const statusCode = err.statusCode ?? HttpStatusCode.INTERNAL_SERVER;

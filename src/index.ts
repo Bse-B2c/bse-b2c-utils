@@ -1,3 +1,5 @@
 import { errorHandler } from "./libs/errorHandler";
+import { HttpError, HttpException } from "./libs/httpException";
+import { HttpStatusCode } from "./libs/enums/httpStatus";
 
-export { errorHandler };
+export { errorHandler, HttpError, HttpException, HttpStatusCode };

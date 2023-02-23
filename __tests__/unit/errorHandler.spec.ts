@@ -1,7 +1,7 @@
 import { errorHandler } from "../../src";
-import { HttpStatusCode } from "../../src/libs/enums/httpStatus";
+import { HttpStatusCode } from "../../src";
 import { request, mockResponse } from "../utils/httpMock";
-import { HttpException } from "../../src/libs/httpException";
+import { HttpException } from "../../src";
 
 describe("errorHandler", () => {
   const res = mockResponse();

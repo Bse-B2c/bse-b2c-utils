@@ -1,4 +1,4 @@
-import { Response } from "../../src/libs/errorHandler";
+import { Response, Request } from "express";
 
 export const mockResponse = () => {
   let res = {} as unknown as Response;
